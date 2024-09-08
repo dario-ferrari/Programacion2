@@ -1,5 +1,5 @@
 package TDAs.impl.pila;
-import TDAs.interfaces.PilaTDA;
+import TDAs.api.PilaTDA;
 
 /**
  * Implementación simple del TDA de una Pila Estática; al desapilar no se eliminan realmente los elementos de la Pila,

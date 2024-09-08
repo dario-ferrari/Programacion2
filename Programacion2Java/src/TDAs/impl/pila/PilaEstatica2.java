@@ -1,5 +1,5 @@
 package TDAs.impl.pila;
-import TDAs.interfaces.PilaTDA;
+import TDAs.api.PilaTDA;
 import java.util.Scanner;
 
 /**
@@ -39,4 +39,5 @@ public class PilaEstatica2 implements PilaTDA {
     public boolean vacio() {
         return tam == 0;
     }
+    
 }

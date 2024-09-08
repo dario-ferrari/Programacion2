@@ -1,4 +1,4 @@
-package TDAs.interfaces;
+package TDAs.api;
 
 public interface PilaTDA {
 

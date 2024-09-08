@@ -1,8 +1,8 @@
-package TDAs.api;
+package TDAs.app;
 
 import TDAs.impl.pila.PilaEstatica;
 import TDAs.impl.pila.PilaEstatica2;
-import TDAs.interfaces.PilaTDA;
+import TDAs.api.PilaTDA;
 
 import java.util.Scanner;
 
