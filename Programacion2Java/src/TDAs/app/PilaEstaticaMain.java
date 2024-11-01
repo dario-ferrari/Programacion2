@@ -22,7 +22,7 @@ public class PilaEstaticaMain {
 
         System.out.print("Contenido de la Pila: ");
 
-        while (pilaEstatica.vacio()!=true){
+        while (pilaEstatica.pilaVacia()!=true){
             System.out.print(pilaEstatica.tope());
             pilaEstatica.desapilar();
         }
@@ -43,7 +43,7 @@ public class PilaEstaticaMain {
         }
 
         System.out.print("Contenido de la Pila: ");
-        while (pilaEstatica2.vacio()!=true){
+        while (pilaEstatica2.pilaVacia()!=true){
             System.out.print(pilaEstatica2.tope());
             pilaEstatica2.desapilar();
         }

@@ -23,7 +23,7 @@ public class Ejercicio2E {
 
     private static int sumarContenido(PilaTDA pila) {
         int total = 0;
-        while(!pila.vacio()){
+        while(!pila.pilaVacia()){
             total = total+pila.tope();
             pila.desapilar();
         }

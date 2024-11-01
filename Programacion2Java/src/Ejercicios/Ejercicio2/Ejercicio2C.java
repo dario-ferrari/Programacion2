@@ -19,17 +19,14 @@ public class Ejercicio2C {
 
         invertirContenido(pila, elementos);
         System.out.print("Contenido de la Pila Invertida: ");
-        while (!pila.vacio()){
-            System.out.print(pila.tope() + " - ");
-            pila.desapilar();
-        }
+        populador.imprimirPila(pila);
 
     }
 
     private static PilaTDA invertirContenido(PilaTDA pila, int elementos) {
         int cont = 0;
         int[] aux = new int[elementos];
-        while(!pila.vacio()){
+        while(!pila.pilaVacia()){
             aux[cont] = pila.tope();
             cont++;
             pila.desapilar();

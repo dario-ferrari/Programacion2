@@ -34,7 +34,7 @@ public class PilaEstatica implements PilaTDA {
     }
 
     @Override
-    public boolean vacio() {
+    public boolean pilaVacia() {
         return tam == 0;
     }
 }

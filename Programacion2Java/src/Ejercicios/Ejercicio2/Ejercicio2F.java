@@ -22,7 +22,7 @@ public class Ejercicio2F {
 
     private static float calcularPromedio(PilaTDA pila, int cantElementos) {
         float promedio = 0;
-        while (!pila.vacio()){
+        while (!pila.pilaVacia()){
             promedio = promedio+pila.tope();
             pila.desapilar();
         }

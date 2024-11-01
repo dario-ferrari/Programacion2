@@ -29,4 +29,11 @@ public class PopuladorPila {
         return cant;
     }
 
+    public void imprimirPila(PilaTDA pila) {
+        while (pila.pilaVacia()!=true){
+            System.out.print(pila.tope() + " - ");
+            pila.desapilar();
+        }
+    }
+
 }

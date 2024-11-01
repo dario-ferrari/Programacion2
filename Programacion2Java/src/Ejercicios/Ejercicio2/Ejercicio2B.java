@@ -21,10 +21,7 @@ public class Ejercicio2B {
         PilaTDA copiaPila = copiarPila(pila, elementos);
 
         System.out.print("Contenido de la Pila Copiada: ");
-        while (copiaPila.vacio()!=true){
-            System.out.print(copiaPila.tope() + " - ");
-            copiaPila.desapilar();
-        }
+        populador.imprimirPila(copiaPila);
 
     }
 
@@ -33,7 +30,7 @@ public class Ejercicio2B {
         copia.inicializarPila();
         int contador = 0;
         int[] aux = new int[e];
-        while (!pila.vacio()){
+        while (!pila.pilaVacia()){
             aux[contador] = pila.tope();
             contador++;
             pila.desapilar();

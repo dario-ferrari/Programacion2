@@ -20,17 +20,14 @@ public class Ejercicio2A {
         PilaTDA nuevaPila = invertirPila(pila);
 
         System.out.print("Contenido de la Pila Invertida: ");
-        while (nuevaPila.vacio()!=true){
-            System.out.print(nuevaPila.tope() + " - ");
-            nuevaPila.desapilar();
-        }
+        populador.imprimirPila(nuevaPila);
 
     }
 
     public static PilaTDA invertirPila(PilaTDA pila) {
         PilaTDA nueva = new PilaEstatica();
         nueva.inicializarPila();
-        while(!pila.vacio()) {
+        while(!pila.pilaVacia()) {
             nueva.apilar(pila.tope());
             pila.desapilar();
         }
