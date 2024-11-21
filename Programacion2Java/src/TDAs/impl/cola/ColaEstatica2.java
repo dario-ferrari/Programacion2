@@ -17,20 +17,6 @@ public class ColaEstatica2 implements ColaTDA {
 
     public void acolar(int elemento) {
         cola[cont] = elemento;
-        /**if (cant!=0) {
-            cant=0;
-        }
-        System.out.println("Ingrese contenido de la Cola - Caracter no numérico para completar: ");
-        try {
-            while (sc.hasNextLine()) {
-                cola.acolar(sc.nextInt());
-                cant++;
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
-        return cola;**/
         cont++;
     }
 
