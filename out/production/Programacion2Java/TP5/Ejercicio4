@@ -1,0 +1,17 @@
+4) El valor 67 es mayor que la clave más grande de la raíz (45), por lo cual
+debe ir al sub-árbol derecho. Lo mismo sucede para el subárbol derecho (67 es mayor que todos),
+por lo que se debe agregar al final del nodo, de forma tal que quedaría con 5 claves:
+[49, 52, 57, 60, 67], pero, como esto excede el máximo de 4 claves permitidas para un nodo
+de un árbol B de orden 5, se debe reestructurar el mismo.
+Básicamente, la clave del medio (57) sube al nodo padre, y se crean dos nuevos nodos,
+un nodo izquierdo [49, 52] y un nodo derecho [60, 67].
+
+
+Por otra parte, para insertar el valor 32, éste es mayor que 21 pero menor que 45, por lo cual,
+debe ir al tercer subárbol [22, 24, 27, 30].
+Dentro de este sub-árbol, 32 es mayor que todos, por lo cual se debe agregar al final, y
+se vuelve a repetir lo sucedido en la inserción anterior: el sub-árbol pasa a tener
+5 claves [22, 24, 27, 30, 32], por ende nuevamente se debe dividir el nodo para que cumpla
+con la condición de árbol B.
+Para esto, la clave del medio (27), sube al nodo padre; y se crean dos nuevos nodos, [22, 24] como
+nodo izquierdo, y [30, 32] como nodo derecho.

@@ -1,0 +1,17 @@
+2) A) El valor 28 se insertaría como hijo del nodo 29, ya que éste es menor que 30 y
+mayor que 25, lo cual básicamente resultaría en un desbalance en el sub-árbol izquierdo de +2.
+Para balancear el árbol se debería rotar hacia la izquierda sobre el nodo 25, elevando al
+28 como nuevo nodo padre del sub-árbol. Por otra parte, hacer una rotación a la derecha
+sobre el nodo 30 para balancear el sub-árbol izquierdo.
+
+B) El valor 47 se insertaría como hijo izquierdo del nodo 48, en el sub-árbol derecho
+del nodo 55. Luego de insertarlo, el nodo 55 tendría un desbalance (+2) ya que su sub-árbol
+izquierdo tiene mayor altura.
+Para balancear el sub-árbol izquierdo de 55 habría que hacer una rotación hacia la derecha sobre
+el nodo 55, elevando al 48 como nuevo nodo padre del sub-árbol, de esta forma se equilibra
+el sub-árbol derecho del nodo 70 y así, manteniendo la principal propiedad de un árbol AVL.
+
+C) Teniendo en cuenta que 84 es mayor que el valor de la raíz (41), éste debe ir al sub-árbol derecho,
+y dentro del sub-árbol derecho es mayor que 70, y que 78, por ende 84 se va a insertar
+como hijo derecho de 78.
+No hay desbalances, por lo cual no es necesario llevar a cabo ninguna modificación.

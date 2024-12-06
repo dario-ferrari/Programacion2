@@ -1,0 +1,5 @@
+5) Para eliminar el valor 45, hay que reemplazarlo por su predecesor o su
+sucesor inmediato. En este caso, su predecesor es 29 (la clave más grande del
+sub-árbol izquierdo), y su sucesor es 49 (la clave más pequeña del sub-árbol derecho).
+Elijo 49 para reemplazar al 45; de esta forma la raíz se convierte en [13, 21, 49], y
+elimino 49 del nodo [49, 60] de forma tal que el nodo queda como [60].

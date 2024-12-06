@@ -1,0 +1,67 @@
+1) Para que los árboles binarios cumplan con la propiedad de ser de tipo AVL, es necesario que para cada nodo
+del árbol, la diferencia de altura que hay entre sus sub-árboles izquierdo y derecho no excedan a 1.
+Por ende, teniendo en cuenta esto:
+
+A) Partiendo del nodo raíz 41, para el sub-árbol izquierdo (32), éste tiene como hijos a 25 (altura=2) y 38 (altura=1).
+El sub-árbol izquierdo de 25 (16) tiene altura=1; y el derecho (27) tiene altura=1. Así que, la altura total es de 3.
+
+Por otra parte, partiendo nuevamente del nodo raíz 41, yendo al sub-árbol derecho (70), éste tiene como hijos a
+45 (altura=3) y 78 (altura=1). Por lo cual la altura total es 4.
+
+Si restamos la altura del lado izquierdo del árbol con el lado derecho:
+
+    3-4 = -1
+
+Cumple con la condición de AVL.
+----------------------------------------------------------------------------------------------------------------------
+Ahora, para el nodo 32 (en la izquierda), que tiene como sub-árbol izquierdo a 25 (altura=2) y a 38 (altura=1), repito el mismo cálculo:
+
+    2-1 = 1
+
+Cumple con la condición de AVL.
+----------------------------------------------------------------------------------------------------------------------
+En cuanto al nodo 70 (en la derecha), tiene como sub-árbol izquierdo al 45 (altura=3) y de derecho al 78 (altura=1),
+si repetimos el mismo cálculo:
+
+    3-1 = 2
+
+Podemos ver que no cumple con la condición de AVL, ya que es mayor a 1.
+
+Para balancear el nodo, habría que realizar una rotación a la derecha, lo cual va a resultar en tener 55 como raíz del subárbol
+derecho.
+
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+
+B) En cuanto al segundo árbol, el nodo raíz 41 tiene un subárbol izquierdo 32, cuyo nodo tiene como
+hijos 25 (con altura=3) y 38 (altura=1). El sub-árbol izquierdo 25 (raíz 16) tiene altura=2 por el
+nuevo nodo 7. Ergo, la altura total del sub-árbol izquierdo en conjunto, es 4.
+
+En cuanto al lado derecho, el nodo 70 tiene como hijos 45 (altura=3) y 78 (altura=1), con una altura
+total de 4.
+
+Realizando el mismo cálculo que hice para el primer caso:
+
+Altura izquierda (4) - Altura derecha (4) = 0
+
+Cumple con la condición de AVL.
+
+Ahora, en cuanto al nodo 32 izquierdo, tiene un sub-árbol izquierdo con altura=3 y un
+sub-árbol derecho 38 con altura=1, lo que resulta en el siguiente cálculo:
+
+    3 - 1 = 2
+
+No cumple con la condición AVL.
+El desbalance ocurre en el subárbol izquierdo del nodo 32, y requiere una rotación de izquierda
+a derecha para que sea corregido:
+    - Básicamente hacer una rotación hacia la izquierda sobre el
+    sub-árbol izquierdo del nodo 32, moviendo el nodo 16 hacia la raíz del subárbol, y el nodo
+    7 se termina convirtiendo en el hijo izquierdo de 16
+    -Luego, realizar una rotación hacia la derecha sobre el nodo 32, el nodo 16 pasa a ser la nueva
+    raíz del sub-árbol con raíz original en 32, y por otra parte, el nodo 32, se convierte en el hijo
+    derecho de 16, todo mientras el nodo 25 se mantiene como el hijo izquierdo de 32.
+
+De esta forma, el nuevo sub-árbol izquierdo tiene una altura de 3, y el sub-árbol derecho (raíz 70)
+también tiene una altura de 4, lo que resulta en una diferencia de 1 (ergo, cumpliendo con la propiedad AVL).
+

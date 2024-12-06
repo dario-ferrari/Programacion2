@@ -1,0 +1,24 @@
+3) A) En cuanto al primer árbol, el nodo raíz posee 3 claves, por lo cual es válido
+para ser un árbol B de orden 4 (ya que como máximo puede tener 3 claves por nodo).
+En cuanto a los nodos hijos, 12 tiene a 5, 8 y 10; por lo cual es correcto porque un nodo
+con una clave puede tener hasta 2 sub-árboles; lo mismo pasa para el nodo [14, 17] y para
+[22, 26, 27, 30].
+
+En resumen, cumple con el máximo permitido de cantidad de claves por nodo, las claves de
+los nodos separan correctamente los valores de cada sub-árbol; y además, hay un equilibrio
+ya que todas las hojas están al mismo nivel.
+Por ende, el primer árbol es un árbol B válido.
+
+B) El nodo raíz tiene las claves de 13, 21 y 45 por lo cual es válido para un árbol de tipo
+B de orden 4; y los hijos contienen un número válido de claves.
+El segundo árbol también es un Árbol B válido.
+
+C) El nodo raíz posee 3 claves: 12, 21 y 45, con lo cuál es válido (por lo mismo aclarado
+para los dos casos anteriores).
+Teniendo en cuenta que tiene que cumplir con un máximo de M-1 claves por nodo, y que todos los
+nodos internos [7, 9, 10], [14, 17], [22, 24, 27, 30], [48, 50, 55, 58] todos tienen
+entre 2 y 4 claves; también es válido.
+Y, por otra parte, debe tener un mínimo de M/2-1 claves, condición que también se cumple para
+el nodo [7, 9, 10] (3 claves con 2 hijos), y sus hijos [4, 6] y [8] tienen cada uno el número
+mínimo de claves.
+Por ende, el tercer árbol también es un árbol B válido.
